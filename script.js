@@ -1,6 +1,6 @@
 const products = {
   "Puro A2 Cow Ghee": {
-    image: "assets/products/puro-ghee-cutout.png",
+    image: "assets/products/puro-ghee.png",
     badge: "Best Seller",
     description:
       "Traditional Vedic A2 cow ghee prepared for everyday Indian meals, festive cooking, and nourishing family rituals.",
