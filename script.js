@@ -78,107 +78,8 @@ const carouselSlides = document.querySelectorAll(".carousel-slide");
 const carouselPrev = document.querySelector("[data-carousel-prev]");
 const carouselNext = document.querySelector("[data-carousel-next]");
 const carouselDots = document.querySelectorAll("[data-carousel-dot]");
-const welcomeIntro = document.querySelector("[data-welcome-intro]");
-const introOpenButton = document.querySelector("[data-intro-open]");
-const introOpenSecondaryButton = document.querySelector("[data-intro-open-secondary]");
-const introSkipButton = document.querySelector("[data-intro-skip]");
-const introInstruction = document.querySelector("[data-intro-instruction]");
-const introCue = document.querySelector("[data-intro-cue]");
-const introStorageKey = "gheeWelcomeCompleted";
-const legacyIntroStorageKey = "arogyaWelcomeIntroSeen";
-const forceIntroPreview = new URLSearchParams(window.location.search).has("previewIntro");
 let activeSlide = 0;
 let touchStartX = 0;
-
-function hasSeenIntro() {
-  try {
-    return localStorage.getItem(introStorageKey) === "true" || localStorage.getItem(legacyIntroStorageKey) === "true";
-  } catch (error) {
-    return false;
-  }
-}
-
-function saveIntroStatus() {
-  try {
-    localStorage.setItem(introStorageKey, "true");
-  } catch (error) {
-    return;
-  }
-}
-
-function closeWelcomeIntro() {
-  if (!welcomeIntro) {
-    return;
-  }
-
-  saveIntroStatus();
-  welcomeIntro.classList.add("is-leaving");
-  document.body.classList.remove("intro-active");
-
-  window.setTimeout(() => {
-    welcomeIntro.hidden = true;
-  }, 800);
-}
-
-function openWelcomeJar() {
-  if (!welcomeIntro || welcomeIntro.classList.contains("is-opened")) {
-    return;
-  }
-
-  saveIntroStatus();
-  resetIntroLight();
-  welcomeIntro.classList.add("is-pressing");
-
-  window.setTimeout(() => {
-    welcomeIntro.classList.remove("is-pressing");
-  }, 220);
-
-  welcomeIntro.classList.add("is-opened");
-  window.setTimeout(closeWelcomeIntro, 3200);
-}
-
-function initWelcomeIntro() {
-  if (!welcomeIntro || (!forceIntroPreview && hasSeenIntro())) {
-    return;
-  }
-
-  const prefersTapText = window.matchMedia("(pointer: coarse)").matches;
-  if (introInstruction) {
-    introInstruction.textContent = prefersTapText ? "Tap the jar to enter" : "Click the jar to enter";
-  }
-  if (introCue) {
-    introCue.textContent = prefersTapText ? "TAP TO OPEN" : "CLICK TO OPEN";
-  }
-
-  welcomeIntro.hidden = false;
-  document.body.classList.add("intro-active");
-  introOpenButton?.focus({ preventScroll: true });
-}
-
-function moveIntroLight(event) {
-  if (!welcomeIntro || !introOpenButton || welcomeIntro.classList.contains("is-opened")) {
-    return;
-  }
-
-  const bounds = introOpenButton.getBoundingClientRect();
-  const xPercent = (event.clientX - bounds.left) / bounds.width - 0.5;
-  const yPercent = (event.clientY - bounds.top) / bounds.height - 0.5;
-  introOpenButton.style.setProperty("--jar-x", `${(xPercent * 5).toFixed(2)}px`);
-  introOpenButton.style.setProperty("--jar-y", `${(yPercent * 5).toFixed(2)}px`);
-  welcomeIntro.style.setProperty("--intro-x", `${(xPercent * 14).toFixed(2)}px`);
-  welcomeIntro.style.setProperty("--intro-y", `${(yPercent * 14).toFixed(2)}px`);
-}
-
-function resetIntroLight() {
-  if (!welcomeIntro || !introOpenButton) {
-    return;
-  }
-
-  introOpenButton.style.setProperty("--jar-x", "0px");
-  introOpenButton.style.setProperty("--jar-y", "0px");
-  welcomeIntro.style.setProperty("--intro-x", "0px");
-  welcomeIntro.style.setProperty("--intro-y", "0px");
-}
 
 function showPage(pageName) {
   const activePage = validPages.has(pageName) ? pageName : "home";
@@ -265,12 +166,6 @@ cartClose?.addEventListener("click", (event) => {
   event.stopPropagation();
   stickyCart?.classList.add("collapsed");
 });
-
-introOpenButton?.addEventListener("click", openWelcomeJar);
-introOpenButton?.addEventListener("mousemove", moveIntroLight);
-introOpenButton?.addEventListener("mouseleave", resetIntroLight);
-introOpenSecondaryButton?.addEventListener("click", openWelcomeJar);
-introSkipButton?.addEventListener("click", closeWelcomeIntro);
 
 navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -524,6 +419,5 @@ function initTestimonialSlider() {
 updateCartLink();
 showSlide(0);
 showPage(window.location.hash.replace("#", "") || "home");
-initWelcomeIntro();
 initRevealAnimations();
 initTestimonialSlider();
