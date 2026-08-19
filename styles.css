@@ -2722,3 +2722,137 @@ dd {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Readability scale for the visible static site. */
+body {
+  font-size: 18px;
+}
+
+.site-header {
+  padding-block: 18px;
+}
+
+.brand-logo {
+  width: 86px;
+  height: 86px;
+}
+
+.desktop-nav {
+  gap: 34px;
+  font-size: 18px;
+}
+
+.desktop-nav a,
+.mobile-header-nav a,
+.mobile-menu a {
+  font-size: inherit;
+}
+
+.eyebrow {
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.hero-text,
+.section-heading p,
+.split-copy > p,
+.about-section p,
+.contact-card p {
+  font-size: 19px;
+}
+
+.button,
+.order-button,
+.header-cta,
+.sticky-cart a {
+  min-height: 62px;
+  padding-inline: 26px;
+  font-size: 20px;
+}
+
+.hero-actions {
+  max-width: 430px;
+  gap: 14px;
+}
+
+.hero-badges {
+  gap: 12px;
+}
+
+.hero-badges span,
+.promise-grid span {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.hero-card {
+  width: 170px;
+  padding: 16px;
+}
+
+.hero-card strong {
+  font-size: 30px;
+}
+
+.hero-card span {
+  font-size: 16px;
+}
+
+.trust-strip article {
+  min-height: 126px;
+  padding: 24px;
+}
+
+.trust-strip strong {
+  font-size: 22px;
+}
+
+.trust-strip span {
+  font-size: 17px;
+}
+
+@media (min-width: 720px) {
+  .site-header {
+    padding-block: 18px;
+  }
+
+  .brand-logo {
+    width: 98px;
+    height: 98px;
+  }
+
+  .desktop-nav {
+    font-size: 18px;
+  }
+
+  .hero {
+    min-height: calc(100svh - 136px);
+  }
+}
+
+@media (max-width: 719px) {
+  .brand-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mobile-header-nav a {
+    font-size: 15px;
+  }
+
+  .eyebrow {
+    font-size: 15px;
+  }
+
+  .button,
+  .order-button,
+  .sticky-cart a {
+    min-height: 56px;
+    font-size: 17px;
+  }
+
+  .hero-badges span,
+  .promise-grid span {
+    font-size: 14px;
+  }
+}

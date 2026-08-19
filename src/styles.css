@@ -4394,3 +4394,104 @@ h3 {
     padding-top: 16px;
   }
 }
+
+/* Readability pass: keep compact labels legible across desktop and mobile. */
+body {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.nav-links a,
+.more-menu button {
+  font-size: 0.88rem;
+}
+
+.eyebrow,
+.featured-kicker,
+.featured-product-card p,
+.product-badge,
+.detail-meta span,
+.process-step-number,
+.ayurveda-hero-image span,
+.ayurveda-portrait-card figcaption,
+.dosha-grid span,
+.rhythm-list small,
+.ghee-history-entry time,
+.ghee-history-marker,
+.ghee-history-note,
+.footer h3,
+.footer-bottom {
+  font-size: 0.84rem;
+}
+
+.btn,
+.assistant-trigger,
+.assistant-panel a,
+.category-pills button,
+.pack-selector button,
+.whatsapp-order-btn,
+.quick-add-btn,
+.cart-whatsapp-checkout {
+  font-size: 0.96rem;
+}
+
+.hero-trust-badges span,
+.hero-stat-grid span,
+.trust-badge-item > span:not(.trust-badge-icon),
+.shop-stats span,
+.pack-size,
+.product-mrp,
+.detail-discount-pill,
+.cart-trust-badges span,
+.cart-rating strong,
+.cart-rating small,
+.cart-totals > div,
+.fresh-batch-message,
+.cart-checkout-note,
+.cart-confidence > p,
+.cart-confidence blockquote strong,
+.cart-confidence summary,
+.cart-confidence details p,
+.contact-trust-list span,
+.contact-counters span,
+.contact-gallery figcaption span,
+.footer p,
+.footer a {
+  font-size: 0.92rem;
+}
+
+.product-card h3 {
+  font-size: 1.05rem;
+}
+
+.rating-row em,
+.discount-pill,
+.cart-add-burst,
+.cart-items p,
+.cart-quantity span,
+.mobile-bottom-nav a,
+.footer-social a {
+  font-size: 0.82rem;
+}
+
+.dosha-grid p,
+.rhythm-list p,
+.contact-experience-list p {
+  font-size: 0.96rem;
+}
+
+@media (max-width: 640px) {
+  .mobile-bottom-nav a {
+    font-size: 0.76rem;
+  }
+
+  .footer h3 {
+    font-size: 0.84rem;
+  }
+
+  .footer-brand p,
+  .footer p,
+  .footer a {
+    font-size: 0.92rem;
+  }
+}
