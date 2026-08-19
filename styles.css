@@ -906,13 +906,16 @@ h3 {
 
 .hero-card strong {
   color: var(--leaf);
-  font-size: 21px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .hero-card span {
   color: var(--muted);
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .trust-strip {
@@ -2786,16 +2789,16 @@ body {
 }
 
 .hero-card {
-  width: 170px;
-  padding: 16px;
+  width: 156px;
+  padding: 12px 14px;
 }
 
 .hero-card strong {
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .hero-card span {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .trust-strip article {
