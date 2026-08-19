@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arogya Organic | Pure Organic Goodness</title>
+    <meta
+      name="description"
+      content="Arogya Organic offers farm fresh, chemical-free organic products rooted in Indian wellness traditions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="welcome-intro" data-welcome-intro hidden aria-label="Welcome introduction">
+      <div class="intro-brand">
+        <strong>PURO GHEE</strong>
+        <span>Traditional Vedic A2 Cow Ghee</span>
+      </div>
+      <button class="intro-skip" type="button" data-intro-skip>Skip intro →</button>
+      <div class="intro-content">
+        <button class="intro-jar-button" type="button" data-intro-open aria-label="Open the A2 Cow Ghee jar">
+          <span class="intro-glow" aria-hidden="true"></span>
+          <span class="intro-shadow" aria-hidden="true"></span>
+          <span class="intro-particles" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </span>
+          <span class="intro-lid" aria-hidden="true"></span>
+          <img src="assets/products/puro-ghee-cutout.png" alt="Puro A2 Cow Ghee jar" data-intro-jar-image />
+        </button>
+        <div class="intro-copy">
+          <button class="intro-open-cue" type="button" data-intro-open-secondary aria-label="Open the jar">
+            <span data-intro-cue>CLICK TO OPEN</span>
+            <span aria-hidden="true">↓</span>
+          </button>
+          <h2 data-intro-title>Pure goodness,<br />rooted in tradition.</h2>
+          <p class="intro-support">Made with tradition. Crafted with purity.</p>
+          <p data-intro-instruction>Click the jar to enter</p>
+          <div class="intro-open-message" data-intro-message aria-live="polite">
+            <strong>WELCOME TO PURO GHEE</strong>
+            <span>Pure goodness, rooted in tradition.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Arogya Organic home">
+        <img class="brand-logo" src="assets/arogya-logo.png" alt="Arogya Organic logo" />
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#process">Our Process</a>
+        <a href="#ayurveda">Ayurveda</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-right">
+        <nav class="mobile-header-nav" aria-label="Mobile primary navigation">
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#process">Our Process</a>
+      <a href="#ayurveda">Ayurveda</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="home" class="page-view active-page home-page">
+      <div class="hero section-pad">
+        <span class="oval-shape oval-one" aria-hidden="true"></span>
+        <span class="oval-shape oval-two" aria-hidden="true"></span>
+        <span class="oval-shape oval-three" aria-hidden="true"></span>
+        <div class="hero-copy">
+          <p class="eyebrow">From Indian soil, with care</p>
+          <h1>Pure Organic Goodness for Your Family</h1>
+          <div class="hero-actions desktop-only">
+            <a class="button primary" href="#shop">Shop Now</a>
+            <a class="button ghost" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20please%20help%20me%20choose%20products.">WhatsApp Us</a>
+          </div>
+          <div class="hero-badges desktop-only" aria-label="Trust badges">
+            <span>100% A2 Desi Cow Milk</span>
+            <span>Traditional Bilona Method</span>
+            <span>No Chemicals</span>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Featured Arogya products">
+          <span class="product-oval glow" aria-hidden="true"></span>
+          <a href="#shop" aria-label="Shop Puro A2 Cow Ghee">
+            <img class="hero-main-img" src="assets/products/puro-ghee.png" alt="Puro A2 Cow Ghee jar" />
+          </a>
+          <a href="#shop" aria-label="Shop Organic Wheat">
+            <img class="hero-float wheat" src="assets/products/organic-wheat.png" alt="Organic wheat pack" />
+          </a>
+          <a href="#shop" aria-label="Shop Premium Basmati Rice">
+            <img class="hero-float rice" src="assets/products/premium-rice.png" alt="Premium basmati rice pack" />
+          </a>
+          <a href="#shop" class="hero-card" aria-label="Shop Puro A2 Cow Ghee">
+            <strong>₹1,399</strong>
+            <span>Puro A2 Cow Ghee</span>
+          </a>
+        </div>
+        <div class="hero-actions mobile-only">
+          <a class="button primary" href="#shop">Shop Now</a>
+          <a class="button ghost" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20please%20help%20me%20choose%20products.">WhatsApp Us</a>
+        </div>
+        <div class="hero-badges mobile-only" aria-label="Trust badges">
+          <span>100% A2 Desi Cow Milk</span>
+          <span>Traditional Bilona Method</span>
+          <span>No Chemicals</span>
+        </div>
+      </div>
+
+      <section class="trust-strip reveal-on-scroll" aria-label="Store benefits">
+        <article>
+          <strong>FSSAI Certified</strong>
+          <span>Licensed and compliant</span>
+        </article>
+        <article>
+          <strong>No Chemicals</strong>
+          <span>100% natural ingredients</span>
+        </article>
+        <article>
+          <strong>Free Delivery</strong>
+          <span>On all orders pan-India</span>
+        </article>
+        <article>
+          <strong>Easy Returns</strong>
+          <span>Hassle-free policy</span>
+        </article>
+      </section>
+
+      <section class="section-pad product-showcase reveal-on-scroll" aria-label="Featured products">
+        <span class="oval-shape showcase-oval" aria-hidden="true"></span>
+        <div class="section-heading">
+          <p class="eyebrow">Slide products</p>
+          <h2>Featured organic picks</h2>
+          <p>Swipe or use the arrow controls to explore the products before opening the full shop page.</p>
+        </div>
+        <div class="carousel-shell">
+          <button class="carousel-control prev" type="button" aria-label="Previous product" data-carousel-prev>‹</button>
+          <div class="product-carousel" data-carousel tabindex="0" aria-label="Featured product slider">
+            <div class="carousel-track" data-carousel-track>
+              <article class="carousel-slide">
+                <button class="carousel-image" type="button" data-product="Puro A2 Cow Ghee">
+                  <img src="assets/products/puro-ghee.png" alt="Puro A2 Cow Ghee" />
+                </button>
+                <div class="carousel-copy">
+                  <span>Best Seller</span>
+                  <h3>Puro A2 Cow Ghee</h3>
+                  <p>Traditional Vedic-style ghee for daily meals, sweets, tadka, and family rituals.</p>
+                  <strong>₹1,399</strong>
+                  <div class="product-card-actions">
+                    <button class="btn-add-cart" type="button" data-order="Puro A2 Cow Ghee">Add to Cart</button>
+                    <a class="btn-buy-now" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20buy%20Puro%20A2%20Cow%20Ghee%20instantly." target="_blank" rel="noopener">Buy Now</a>
+                  </div>
+                </div>
+              </article>
+              <article class="carousel-slide">
+                <button class="carousel-image" type="button" data-product="Organic Wheat">
+                  <img src="assets/products/organic-wheat.png" alt="Organic Wheat" />
+                </button>
+                <div class="carousel-copy">
+                  <span>Farm Staple</span>
+                  <h3>Organic Wheat</h3>
+                  <p>Clean whole grain wheat selected for fresh atta, rotis, and everyday pantry use.</p>
+                  <strong>₹399</strong>
+                  <div class="product-card-actions">
+                    <button class="btn-add-cart" type="button" data-order="Organic Wheat">Add to Cart</button>
+                    <a class="btn-buy-now" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20buy%20Organic%20Wheat%20instantly." target="_blank" rel="noopener">Buy Now</a>
+                  </div>
+                </div>
+              </article>
+              <article class="carousel-slide">
+                <button class="carousel-image" type="button" data-product="Premium Basmati Rice">
+                  <img src="assets/products/premium-rice.png" alt="Premium Basmati Rice" />
+                </button>
+                <div class="carousel-copy">
+                  <span>Premium Pick</span>
+                  <h3>Premium Basmati Rice</h3>
+                  <p>Aged long grain rice with natural aroma for pulao, biryani, and special meals.</p>
+                  <strong>₹599</strong>
+                  <div class="product-card-actions">
+                    <button class="btn-add-cart" type="button" data-order="Premium Basmati Rice">Add to Cart</button>
+                    <a class="btn-buy-now" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20buy%20Premium%20Basmati%20Rice%20instantly." target="_blank" rel="noopener">Buy Now</a>
+                  </div>
+                </div>
+              </article>
+              <article class="carousel-slide">
+                <button class="carousel-image" type="button" data-product="Natural Cow Dung Cakes">
+                  <img src="assets/products/cow-dung-cakes.png" alt="Natural Cow Dung Cakes" />
+                </button>
+                <div class="carousel-copy">
+                  <span>Farm Ritual</span>
+                  <h3>Natural Cow Dung Cakes</h3>
+                  <p>Handmade sun-dried cakes for puja, havan, and natural farm-based living.</p>
+                  <strong>₹199</strong>
+                  <div class="product-card-actions">
+                    <button class="btn-add-cart" type="button" data-order="Natural Cow Dung Cakes">Add to Cart</button>
+                    <a class="btn-buy-now" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20buy%20Natural%20Cow%20Dung%20Cakes%20instantly." target="_blank" rel="noopener">Buy Now</a>
+                  </div>
+                </div>
+              </article>
+              <article class="carousel-slide">
+                <button class="carousel-image" type="button" data-product="Triphala Churna">
+                  <img src="assets/products/triphala-churna.png" alt="Triphala Churna" />
+                </button>
+                <div class="carousel-copy">
+                  <span>Ayurvedic</span>
+                  <h3>Triphala Churna</h3>
+                  <p>A classic herbal blend for simple digestive wellness and mindful daily care.</p>
+                  <strong>₹299</strong>
+                  <div class="product-card-actions">
+                    <button class="btn-add-cart" type="button" data-order="Triphala Churna">Add to Cart</button>
+                    <a class="btn-buy-now" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20buy%20Triphala%20Churna%20instantly." target="_blank" rel="noopener">Buy Now</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="carousel-control next" type="button" aria-label="Next product" data-carousel-next>›</button>
+        </div>
+        <div class="carousel-dots" aria-label="Product slider position">
+          <button class="active" type="button" aria-label="Show product 1" data-carousel-dot="0"></button>
+          <button type="button" aria-label="Show product 2" data-carousel-dot="1"></button>
+          <button type="button" aria-label="Show product 3" data-carousel-dot="2"></button>
+          <button type="button" aria-label="Show product 4" data-carousel-dot="3"></button>
+          <button type="button" aria-label="Show product 5" data-carousel-dot="4"></button>
+        </div>
+      </section>
+
+      <section class="section-pad home-overview reveal-on-scroll">
+        <div class="section-heading">
+          <p class="eyebrow">From our hands to your home</p>
+          <h2>Every product has a story. Discover where it begins.</h2>
+          <p>
+            From carefully sourced ingredients to traditional preparation and mindful packaging, we ensure purity at
+            every step.
+          </p>
+        </div>
+        <div class="process-story">
+          <article>
+            <img src="assets/process/farmer-wheat-hand.jpg" alt="Fresh crop being sourced from a farm" />
+            <div>
+              <span>01</span>
+              <strong>Sourced with Care</strong>
+              <p>We work with trusted farmers who follow natural practices.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/process/traditional-ghee-pot.jpg" alt="Traditional ghee preparation in a brass pot" />
+            <div>
+              <span>02</span>
+              <strong>Traditionally Prepared</strong>
+              <p>Our time-tested methods preserve the true goodness.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/process/ghee-jar.jpg" alt="Packed ghee jars being checked by hand" />
+            <div>
+              <span>03</span>
+              <strong>Carefully Checked</strong>
+              <p>Every batch is quality tested for purity and freshness.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/process/packing-box.jpg" alt="Arogya Organic package ready for delivery" />
+            <div>
+              <span>04</span>
+              <strong>Delivered to You</strong>
+              <p>From our home to yours, with love and care.</p>
+            </div>
+          </article>
+        </div>
+        <a class="process-link" href="#process">Explore Our Process <span aria-hidden="true">-></span></a>
+
+        <div class="essentials-panel">
+          <div class="section-heading compact">
+            <h2>Find Your Everyday Essentials</h2>
+            <p>Wholesome products for a healthier, happier you.</p>
+          </div>
+          <div class="essentials-grid">
+            <a href="#shop">
+              <img src="assets/process/ghee-jar.jpg" alt="Arogya ghee jar with a small bowl of ghee" />
+              <div>
+                <span aria-hidden="true">G</span>
+                <strong>Ghee & Oils</strong>
+                <p>Traditional nourishment</p>
+                <em aria-hidden="true">-></em>
+              </div>
+            </a>
+            <a href="#shop">
+              <img src="assets/process/rice-plate.jpg" alt="Natural grains and pulses arranged in bowls" />
+              <div>
+                <span aria-hidden="true">P</span>
+                <strong>Grains & Pulses</strong>
+                <p>Wholesome & natural</p>
+                <em aria-hidden="true">-></em>
+              </div>
+            </a>
+            <a href="#ayurveda">
+              <img src="assets/story/ayurvedic-herbs.jpeg" alt="Ayurvedic herbs and mortar in greenery" />
+              <div>
+                <span aria-hidden="true">A</span>
+                <strong>Ayurvedic Wellness</strong>
+                <p>Balance & well-being</p>
+                <em aria-hidden="true">-></em>
+              </div>
+            </a>
+            <a href="#shop">
+              <img src="assets/process/packed-with-love.jpg" alt="Natural living essentials packed with care" />
+              <div>
+                <span aria-hidden="true">N</span>
+                <strong>Natural Living</strong>
+                <p>Simple & sustainable</p>
+                <em aria-hidden="true">-></em>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="section-pad testimonials-section reveal-on-scroll" aria-label="Customer testimonials">
+        <div class="section-heading">
+          <p class="eyebrow">Customer love</p>
+          <h2>Trusted by families who care about purity</h2>
+        </div>
+        <div class="testimonials-slider">
+          <button class="slider-control prev" type="button" aria-label="Previous testimonial" data-slider-prev>‹</button>
+          <div class="testimonials-viewport" data-slider-viewport>
+            <div class="testimonials-track" data-slider-track>
+              <article class="testimonial-card">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <p>“Their ghee has become a staple at home. The aroma feels exactly like the ghee my grandmother made.”</p>
+                <strong>Rohit M.</strong>
+                <span>Mumbai, India</span>
+              </article>
+              <article class="testimonial-card">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <p>“The texture is beautifully grainy and the WhatsApp ordering process was simple and personal.”</p>
+                <strong>Ananya R.</strong>
+                <span>Pune, India</span>
+              </article>
+              <article class="testimonial-card">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <p>“Honest products, careful packaging, and quick support. A very reassuring experience.”</p>
+                <strong>Meera S.</strong>
+                <span>Bangalore, India</span>
+              </article>
+            </div>
+          </div>
+          <button class="slider-control next" type="button" aria-label="Next testimonial" data-slider-next>›</button>
+        </div>
+        <div class="slider-dots" aria-label="Testimonial position">
+          <button class="active" type="button" aria-label="Show testimonial 1" data-slider-dot="0"></button>
+          <button type="button" aria-label="Show testimonial 2" data-slider-dot="1"></button>
+          <button type="button" aria-label="Show testimonial 3" data-slider-dot="2"></button>
+        </div>
+      </section>
+
+      <p class="home-footer-text">
+        Farm fresh, chemical-free, natural products delivered with trust. Explore premium ghee, grains, Ayurveda,
+        and natural living essentials through clear dedicated pages.
+      </p>
+      </section>
+
+      <section id="shop" class="page-view section-pad shop-section reveal-on-scroll">
+        <span class="oval-shape page-oval shop-oval" aria-hidden="true"></span>
+        <div class="section-heading">
+          <p class="eyebrow">Organic essentials</p>
+          <h2>Choose your daily wellness products</h2>
+        </div>
+
+        <div class="filter-tabs" role="tablist" aria-label="Product categories">
+          <button class="active" type="button" data-filter="all">All</button>
+          <button type="button" data-filter="ghee">Ghee</button>
+          <button type="button" data-filter="grains">Grains</button>
+          <button type="button" data-filter="ayurveda">Ayurveda</button>
+          <button type="button" data-filter="natural">Natural Living</button>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card featured-product" data-category="ghee">
+            <span class="product-badge">Best Seller</span>
+            <button class="product-image-button" type="button" data-product="Puro A2 Cow Ghee">
+              <img src="assets/products/puro-ghee.png" alt="Puro A2 Cow Ghee" />
+            </button>
+            <div class="product-info">
+              <p>Traditional Dairy</p>
+              <h3>Puro A2 Cow Ghee</h3>
+              <span class="pack">1kg Jar</span>
+              <div class="price-row"><strong>₹1,399</strong><del>₹1,599</del></div>
+              <div class="product-card-actions">
+                <button class="btn-add-cart" type="button" data-order="Puro A2 Cow Ghee">Add to Cart</button>
+                <a class="btn-buy-now" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20buy%20Puro%20A2%20Cow%20Ghee%20instantly." target="_blank" rel="noopener">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="grains">
+            <span class="product-badge">Stone Mill Ready</span>
+            <button class="product-image-button" type="button" data-product="Organic Wheat">
+              <img src="assets/products/organic-wheat.png" alt="Organic wheat" />
+            </button>
+            <div class="product-info">
+              <p>Farm Staples</p>
+              <h3>Organic Wheat</h3>
+              <span class="pack">5kg Whole Grain</span>
+              <div class="price-row"><strong>₹399</strong><del>₹449</del></div>
+              <div class="product-card-actions">
+                <button class="btn-add-cart" type="button" data-order="Organic Wheat">Add to Cart</button>
+                <a class="btn-buy-now" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20buy%20Organic%20Wheat%20instantly." target="_blank" rel="noopener">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="grains">
+            <span class="product-badge">Premium Pick</span>
+            <button class="product-image-button" type="button" data-product="Premium Basmati Rice">
+              <img src="assets/products/premium-rice.png" alt="Premium basmati rice" />
+            </button>
+            <div class="product-info">
+              <p>Farm Staples</p>
+              <h3>Premium Basmati Rice</h3>
+              <span class="pack">5kg Long Grain</span>
+              <div class="price-row"><strong>₹599</strong><del>₹699</del></div>
+              <div class="product-card-actions">
+                <button class="btn-add-cart" type="button" data-order="Premium Basmati Rice">Add to Cart</button>
+                <a class="btn-buy-now" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20buy%20Premium%20Basmati%20Rice%20instantly." target="_blank" rel="noopener">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="natural">
+            <span class="product-badge">Farm Ritual</span>
+            <button class="product-image-button" type="button" data-product="Natural Cow Dung Cakes">
+              <img src="assets/products/cow-dung-cakes.png" alt="Natural cow dung cakes" />
+            </button>
+            <div class="product-info">
+              <p>Natural Living</p>
+              <h3>Natural Cow Dung Cakes</h3>
+              <span class="pack">Eco Pack</span>
+              <div class="price-row"><strong>₹199</strong><del>₹249</del></div>
+              <div class="product-card-actions">
+                <button class="btn-add-cart" type="button" data-order="Natural Cow Dung Cakes">Add to Cart</button>
+                <a class="btn-buy-now" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20buy%20Natural%20Cow%20Dung%20Cakes%20instantly." target="_blank" rel="noopener">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="ayurveda">
+            <span class="product-badge">Ayurvedic</span>
+            <button class="product-image-button" type="button" data-product="Triphala Churna">
+              <img src="assets/products/triphala-churna.png" alt="Triphala churna pouch" />
+            </button>
+            <div class="product-info">
+              <p>Ayurvedic Wellness</p>
+              <h3>Triphala Churna</h3>
+              <span class="pack">200g Pouch</span>
+              <div class="price-row"><strong>₹299</strong><del>₹349</del></div>
+              <div class="product-card-actions">
+                <button class="btn-add-cart" type="button" data-order="Triphala Churna">Add to Cart</button>
+                <a class="btn-buy-now" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20buy%20Triphala%20Churna%20instantly." target="_blank" rel="noopener">Buy Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="process" class="page-view section-pad split-section reveal-on-scroll">
+        <span class="oval-shape page-oval process-oval" aria-hidden="true"></span>
+        <div class="split-media">
+          <img src="assets/process/traditional-ghee-pot.jpg" alt="Traditional ghee preparation" />
+        </div>
+        <div class="split-copy">
+          <p class="eyebrow">From nature to your home</p>
+          <h2>Crafted with purity, traditional wisdom, and quality checks.</h2>
+          <div class="timeline">
+            <article><strong>Sourcing</strong><span>Ingredients selected from clean farms and trusted partners.</span></article>
+            <article><strong>Natural Farming</strong><span>Soil health, seasonal rhythm, and careful handling matter.</span></article>
+            <article><strong>Traditional Preparation</strong><span>Bilona churning, low intervention, and small batches.</span></article>
+            <article><strong>Hygienic Packaging</strong><span>Premium packed products coordinated personally on WhatsApp.</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-view section-pad journey-section" data-page-child="process">
+        <div class="section-heading">
+          <p class="eyebrow">The Arogya journey</p>
+          <h2>Simple, honest, and easy to understand.</h2>
+          <p>
+            The process page explains how ingredients travel from farm selection to careful packing and personal order
+            confirmation.
+          </p>
+        </div>
+        <div class="journey-grid">
+          <article>
+            <img src="assets/story/farm-care.jpeg" alt="Natural farm care" />
+            <h3>Natural farms</h3>
+            <p>Clean farms where soil health and seasonal rhythm come first.</p>
+          </article>
+          <article>
+            <img src="assets/process/cowshed.jpg" alt="Ethical Desi cow care" />
+            <h3>Ethical sourcing</h3>
+            <p>People who understand traditional food and Desi cow care.</p>
+          </article>
+          <article>
+            <img src="assets/process/packed-with-love.jpg" alt="Arogya product packing" />
+            <h3>Home delivery</h3>
+            <p>Every order is confirmed personally so families know what they receive.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="ayurveda" class="page-view section-pad ayurveda-section reveal-on-scroll">
+        <span class="oval-shape page-oval ayurveda-oval" aria-hidden="true"></span>
+        <div class="section-heading light">
+          <p class="eyebrow">Ayurveda</p>
+          <h2>Live in balance with your natural rhythm</h2>
+          <p>
+            A way of life, not only a healing system. This page gives visitors a simple introduction to rhythm, balance,
+            and mindful daily choices.
+          </p>
+        </div>
+        <div class="wellness-grid">
+          <article>
+            <img src="assets/wellness/chakras.jpg" alt="Seven chakras" />
+            <h3>Seven Chakras</h3>
+            <p>Root, Sacral, Solar Plexus, Heart, Throat, Third Eye, Crown.</p>
+          </article>
+          <article>
+            <img src="assets/wellness/dosha-guide.jpg" alt="Ayurvedic dosha guide" />
+            <h3>Three Doshas</h3>
+            <p>Vata, Pitta, and Kapha guide everyday balance.</p>
+          </article>
+          <article>
+            <img src="assets/wellness/ayurvedic-clock.jpg" alt="Ayurvedic daily clock" />
+            <h3>Ayurvedic Clock</h3>
+            <p>Morning, midday, afternoon, evening, and night rituals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="page-view section-pad contact-section reveal-on-scroll">
+        <div class="contact-card">
+          <p class="eyebrow">Need help choosing?</p>
+          <h2>We are here to help you choose well</h2>
+          <p>
+            For orders, product questions, delivery availability, or farm sourcing enquiries, connect with the Arogya
+            Organic team.
+          </p>
+          <div class="contact-actions">
+            <a class="button primary" href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20need%20help%20choosing%20products.">Message on WhatsApp</a>
+            <a class="button ghost" href="mailto:arogyaorganicteam@gmail.com">Email Us</a>
+          </div>
+          <dl class="contact-list">
+            <div><dt>WhatsApp</dt><dd>+91 77699 99888</dd></div>
+            <div><dt>Hours</dt><dd>10:00 AM - 7:00 PM</dd></div>
+            <div><dt>Delivery</dt><dd>Pan-India</dd></div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <strong>Arogya Organic</strong>
+      <p>Farm fresh, chemical-free, natural products delivered with trust.</p>
+      <div>
+        <a href="https://instagram.com/arogya.organic">Instagram</a>
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://youtube.com">YouTube</a>
+      </div>
+    </footer>
+
+    <div class="sticky-cart collapsed" aria-live="polite">
+      <button class="cart-toggle" type="button" aria-label="View selected products">
+        <svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="cart-badge" data-cart-badge>0</span>
+      </button>
+
+      <div class="cart-panel">
+        <span class="cart-summary"><strong data-cart-count>0</strong> selected</span>
+        <a href="https://wa.me/917769999888?text=Hi%20Arogya%20Organic%2C%20I%20want%20to%20place%20an%20order." class="cart-btn" data-cart-link>Order on WhatsApp</a>
+        <button class="cart-close" type="button" aria-label="Minimize cart">×</button>
+      </div>
+    </div>
+
+    <dialog class="product-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close product details">×</button>
+      <div class="dialog-scroll-container">
+        <img data-dialog-image src="assets/products/puro-ghee.png" alt="" />
+        <div class="dialog-details">
+          <span data-dialog-badge class="product-badge">Best Seller</span>
+          <h2 id="dialog-title" data-dialog-title>Puro A2 Cow Ghee</h2>
+          
+          <!-- Tabs Menu -->
+          <div class="dialog-tabs" role="tablist" aria-label="Product specifications">
+            <button class="active" type="button" role="tab" aria-selected="true" data-dialog-tab="description">Description</button>
+            <button type="button" role="tab" aria-selected="false" data-dialog-tab="benefits">Benefits</button>
+            <button type="button" role="tab" aria-selected="false" data-dialog-tab="usage">How to Use</button>
+          </div>
+
+          <!-- Tabs Content Panels -->
+          <div class="dialog-tab-panels">
+            <div class="tab-panel active" id="pane-description" role="tabpanel">
+              <p data-dialog-description></p>
+            </div>
+            <div class="tab-panel" id="pane-benefits" role="tabpanel">
+              <ul data-dialog-benefits></ul>
+            </div>
+            <div class="tab-panel" id="pane-usage" role="tabpanel">
+              <p class="usage" data-dialog-usage></p>
+            </div>
+          </div>
+
+          <button class="order-button" type="button" data-dialog-order>
+            <svg class="wa-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 18px; height: 18px; margin-right: 8px;">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            Add to WhatsApp Cart
+          </button>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
