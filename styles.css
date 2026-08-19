@@ -844,7 +844,7 @@ h3 {
 .hero-main-img {
   position: relative;
   z-index: 3;
-  width: min(64vw, 430px);
+  width: min(42vw, 220px);
   margin: 0 auto;
   filter: drop-shadow(0 28px 38px rgba(34, 49, 27, 0.2));
   animation: productFloat 5.6s ease-in-out infinite;
@@ -2309,7 +2309,7 @@ dd {
   }
 
   .hero-main-img {
-    width: min(46vw, 560px);
+    width: min(24vw, 290px);
   }
 
   .trust-strip {
