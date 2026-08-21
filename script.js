@@ -119,7 +119,9 @@ function showSlide(index) {
 
 function updateCartLink() {
   const count = selectedProducts.length;
-  cartCount.textContent = count;
+  if (cartCount) {
+    cartCount.textContent = count;
+  }
   if (cartBadge) {
     cartBadge.textContent = count;
   }
@@ -133,7 +135,9 @@ function updateCartLink() {
   const productText = count
     ? `Hi Arogya Organic, I want to order: ${selectedProducts.join(", ")}. Please confirm availability and delivery.`
     : "Hi Arogya Organic, I want to place an order.";
-  cartLink.href = `https://wa.me/917769999888?text=${encodeURIComponent(productText)}`;
+  if (cartLink) {
+    cartLink.href = `https://wa.me/917769999888?text=${encodeURIComponent(productText)}`;
+  }
 }
 
 function addProduct(productName) {
@@ -181,7 +185,8 @@ navLinks.forEach((link) => {
 });
 
 window.addEventListener("hashchange", () => {
-  showPage(window.location.hash.replace("#", ""));
+  const page = window.location.hash.replace("#", "").trim();
+  showPage(page || "home");
 });
 
 filterButtons.forEach((button) => {
@@ -280,7 +285,7 @@ carouselDots.forEach((dot) => {
 
 carousel?.addEventListener("touchstart", (event) => {
   touchStartX = event.touches[0].clientX;
-});
+}, { passive: true });
 
 carousel?.addEventListener("touchend", (event) => {
   const touchEndX = event.changedTouches[0].clientX;
@@ -291,7 +296,7 @@ carousel?.addEventListener("touchend", (event) => {
   }
 
   showSlide(activeSlide + (swipeDistance < 0 ? 1 : -1));
-});
+}, { passive: true });
 
 carousel?.addEventListener("keydown", (event) => {
   if (event.key === "ArrowLeft") {
